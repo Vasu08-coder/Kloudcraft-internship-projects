@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Registration Portal</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+        }
+
+        .container{
+            width:420px;
+            background:white;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            text-align:center;
+            color:#1e3c72;
+            margin-bottom:10px;
+        }
+
+        p{
+            text-align:center;
+            color:gray;
+            margin-bottom:25px;
+        }
+
+        input{
+            width:100%;
+            padding:14px;
+            margin-top:12px;
+            border-radius:10px;
+            border:1px solid #ccc;
+            font-size:15px;
+        }
+
+        button{
+            width:100%;
+            margin-top:20px;
+            padding:14px;
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            color:white;
+            border:none;
+            border-radius:10px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Campaign Portal</h1>
+
+    <p>Register for our latest campaign</p>
+
+    <form action="submit.php" method="POST">
+
+        <input type="text" name="name" placeholder="Enter Full Name" required>
+
+        <input type="email" name="email" placeholder="Enter Email Address" required>
+
+        <input type="text" name="phone" placeholder="Enter Phone Number" required>
+
+        <input type="text" name="campaign" placeholder="Enter Campaign Name" required>
+
+        <button type="submit">
+            Register Now
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
